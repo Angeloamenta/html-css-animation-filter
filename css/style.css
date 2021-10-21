@@ -121,7 +121,7 @@
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+      transform: rotate(-359deg);
     }
   }
 
@@ -140,7 +140,7 @@
         transform: rotate(0);
     }
     90% {
-        transform: rotate(350deg);
+        transform: rotate(-350deg);
     }
     100% {
         transform: rotate(0);
@@ -180,7 +180,18 @@
     animation-name: btnbottom;
 }
 
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-13-button:hover .ex-13-top-white{
+    animation: 2s linear;
+    animation-name: bottone1;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: 2s linear;
+    animation-name: bottone2;
+}
+
+
+.ex-13-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
@@ -222,3 +233,62 @@
     }
 }
 
+@keyframes bottone1 {
+  
+    0% {
+        top: -10px;
+        left: 20%;
+    }
+
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    40% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    70% {
+        left: 0;
+        top: 100%;
+    }
+
+    80% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100% {
+        left: 20%;
+        top: -10px;
+    }
+}
+
+@keyframes bottone2 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    40% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    70% {
+        right: 0;
+        bottom: 100%;
+    }
+    80% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
