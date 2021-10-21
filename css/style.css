@@ -176,7 +176,7 @@
 }
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: 2s linear12;
+    animation: 2s linear;
     animation-name: btnbottom;
 }
 
@@ -202,12 +202,8 @@
     left: 30%;
     } */
 
-    0% {
-        left: 10%;
-    }
-
     50% {
-        left: 60%;
+        left: calc(100% - 60px)
     }
 
     100% {
@@ -217,15 +213,12 @@
 
 @keyframes btnbottom {
    
-    0% {
-        right: 10%;
-    }
-
     50% {
-        right: 60%;
+        right: calc(100% - 60px)
     }
 
     100% {
-        right:10%
+        right:20%
     }
 }
+
