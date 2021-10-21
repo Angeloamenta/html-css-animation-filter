@@ -12,11 +12,11 @@
     width: 100px;
     height: 100px;
     background: red;
-    animation-duration: 3s;
+    transition: 3s;
 }
 
 .ex-2-square:active{
-    animation-name: line;
+    width: 100%;
 }
 
 /* @keyframes line {
@@ -31,7 +31,14 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+
+.ex-3-square:hover{
+    border-radius: 100%;
+}
+
+
 .ex-4-square {
     width: 100px;
     height: 100px;
